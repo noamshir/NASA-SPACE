@@ -1,8 +1,8 @@
 name: NASA Project CI
 on: 
- push:
+  push:
     branches: [ main ]
- pull_request:
+  pull_request:
     branches: [ main ]
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js V16
-      - uses: actions/setup-node@2
+        uses: actions/setup-node@2
         with: 
           node-version: '16'
       - run: npm install
