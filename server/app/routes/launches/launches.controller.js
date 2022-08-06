@@ -26,6 +26,7 @@ async function httpPostLaunch(req, res) {
         await scheduleNewLaunch(launch)
         res.status(201).json(launch)
     } catch (error) {
+        console.log({error})
         res.status(500).json({ error })
     }
 
