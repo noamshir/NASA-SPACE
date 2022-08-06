@@ -8,7 +8,7 @@ jobs:
   build:
     env:
       CI: true
-      MONGO_URI: mongodb://localhost/Nasa-Missons
+      MONGO_URL: mongodb://localhost/Nasa-Missons
     strategy:
       matrix:
         node-version: [14.x, 16.x]
