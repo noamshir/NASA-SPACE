@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
     "server": "cd server && npm run dev",
     "client": "npm start --prefix client",
-    "install": "npm run install-server && npm run install-client",
-    "dev": "npm run server & npm run client",
+    "dev": "npm run server & npm run cslient",
     "deploy": "npm run build --prefix client && npm start --prefix server",
     "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "echo \"Error: no test specified\" && exit 1"
