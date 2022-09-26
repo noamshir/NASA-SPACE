@@ -31,13 +31,13 @@ describe('Test Launches API', () => {
     }
 
     const launchDataWithoutDate = {
-      mission: 'Test Misson',
+      mission: 'Test mission',
       rocket: 'ZTM IS 35',
       target: 'Kepler-62 f',
     }
 
     const launchDataWithInvalidDate = {
-      mission: 'Test Misson',
+      mission: 'Test mission',
       rocket: 'ZTM IS 35',
       target: 'Kepler-62 f',
       launchDate: 'test',
